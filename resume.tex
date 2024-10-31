@@ -1,0 +1,98 @@
+\documentclass{article}
+\usepackage{multicol}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome5}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage{helvet}
+\usepackage[letterspace=80]{microtype}
+\usepackage{sectsty}
+\usepackage[margin=0.7in]{geometry}
+
+\subsectionfont{\fontsize{11}{11}\selectfont}
+
+
+\begin{document}
+\pagenumbering{gobble}
+
+\newcommand\project[3]
+{
+  \subsection*{#1}
+  \textbf{Technologies:} #2
+  #3
+}
+
+
+
+\begin{center}
+\Large\textbf{\fontfamily{phv}\lsstyle JAKE REARDON} \\
+\vspace{6pt}
+\small \faPhone\ (603) 502-6978 ~
+\faEnvelope\  jreardon@umass.edu ~
+\faLinkedin\  \href{http://www.linkedin.com/in/jaketreardon}{jaketreardon} ~
+\faGithub\  \href{https://github.com/jakereardon}{jakereardon}
+\end{center}
+
+
+\vspace{3pt}
+\begin{center}\fontfamily{phv}\selectfont\textbf{\lsstyle EDUCATION}\end{center}
+
+\subsection*{University of Massachusetts Amherst \hfill August 2020-May 2024}
+\textbf{Bachelor of Science in Computer Science and Mathematics, 3.5 GPA} \\
+\textbf{Relevant Courses}
+Introduction to Simulation,
+Statistical Computing,
+Applications of Scientific Computing,
+Machine Learning,
+Introduction to Algorithms,
+Programming with Data Structures,
+Operating Systems
+
+
+\vspace{5pt}
+\begin{center}\fontfamily{phv}\selectfont\textbf{\lsstyle SKILLS}\end{center}
+React, Node.js, Express, MongoDB, Python (NumPy, Matplotlib, pandas, PyTorch, Django), Java, LaTeX, Git/Github, HTML/CSS, JavaScript
+
+
+\vspace{5pt}
+\begin{center}\fontfamily{phv}\selectfont\textbf{\lsstyle EXPERIENCE}\end{center}
+\subsection*{Automation and Data Intern $\vert$ Lonza Biologics, Portsmouth, NH \hfill May-August 2023}
+\begin{itemize}
+  \setlength\itemsep{0.025em}
+  \item Developed a Python tool using Pandas allowing scientists to quickly and easily create Matplotlib time series graphs of various measurements collected from a lab sample
+  \item Features included standardized formatting of axis labels with regular expressions, automatic LaTeX typesetting of chemical formulas, and the ability to generate PowerPoint presentations and R Markdown reports instantly
+  \item Tool was eventually integrated with existing software to allow for use by research and development scientists
+\end{itemize}
+
+
+\vspace{5pt}
+\begin{center}\fontfamily{phv}\selectfont\textbf{\lsstyle PROJECTS}\end{center}
+
+\project{Drag and Drop Ecommerce Platform \hfill August 2024-Present}
+{React, Express, MongoDB, JavaScript, HTML/CSS}
+{\begin{itemize}
+  \setlength\itemsep{0.025em}
+  \item Implemented a responsive drag and drop interface with React, allowing customers to design and order a unique product online
+  \item Used the Express framework to implement a REST API for reading product inventory from MongoDB and sending order information to business owners
+  \item Integrated Stripe for processing payments with the Stripe Node.js library
+\end{itemize}}
+
+\project{Tiny Image Classifier Neural Network \hfill November-December 2023}
+{PyTorch, Python}
+{\begin{itemize}
+  \setlength\itemsep{0.025em}
+  \item Designed, implemented and refined a convolutional neural network to classify images belonging to ten mutually exclusive classes
+  \item Trained the network with 50,000 images from the CIFAR-10 dataset (Canadian Institute For Advanced Research) using stochastic gradient descent with cross-entropy loss
+  \item Achieved 65.2\% accuracy on the test set of 10,000 images
+\end{itemize}}
+
+\project{Real Estate Company Website (\href{https://eastcoastgroupone.com}{eastcoastgroupone.com}) \hfill June 2023-November 2023}
+{Django, Python, HTML/CSS, JavaScript}
+{\begin{itemize}
+  \setlength\itemsep{0.025em}
+  \item Designed and deployed a website for East Coast Group One Realty, a real estate company located in the Seacoast Region of New Hampshire
+  \item Used an MLS (multiple listing service) API to display current residental listings across the site with Django backend
+  \item Configured the Django admin site to allow non-technical employees to edit the data displayed on each page, including listings and agent information, without needing to access or change source code
+\end{itemize}}
+
+\end{document}
